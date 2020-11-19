@@ -89,7 +89,6 @@ plugins=(
 	docker-compose
 	docker
 	ubuntu
-	zsh-syntax-highlighting
 	zsh-autosuggestions
 )
 

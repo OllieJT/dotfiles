@@ -1,6 +1,6 @@
 # OllieJT Dotfiles (homeshick)
 
-Based on [Homeshick](https://github.com/andsens/homeshick)
+Based on [Homeshick Castles](https://github.com/andsens/homeshick)
 
 ## Todo
 
@@ -23,6 +23,12 @@ To invoke homeshick, source the `homeshick.sh` script from your rc-script:
 # from sh and its derivates (bash, dash, ksh, zsh etc.)
 printf '\nsource "$HOME/.homesick/repos/homeshick/homeshick.sh"' >> $HOME/.zshrc
 ```
+
+Clone castle with: `$HOME/.homesick/repos/homeshick/bin/homeshick clone olliejt/dotfiles`
+
+homeshick will ask you immediately whether you want to symlink the newly cloned castle.
+If you agree to that and also agree to it overwriting the existing `.zshrc` you can run
+`source $HOME/.zshrc` to get your `homeshick` alias running.
 
 ## Reminders
 

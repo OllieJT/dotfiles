@@ -20,7 +20,7 @@ export PATH
 
 SHELL=/bin/zsh
 EDITOR=code
-BROWSER=chromium
+BROWSER=chromium-browser
 LANG=en_GB.UTF-8
 
 export SHELL EDITOR BROWSER LANG

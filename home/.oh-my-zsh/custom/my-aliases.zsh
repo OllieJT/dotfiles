@@ -12,3 +12,4 @@
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 alias zshconfig='$HOME/.oh-my-zsh/custom'
 alias pip='pip3'
+alias chromium='chromium-browser'

@@ -1,3 +1,12 @@
+#!/bin/bash
+
+# ==========
+# Enabling all repositories and refreshing the software list
+# ==========
+
+sudo add-apt-repository -y universe # For Ubuntu
+sudo add-apt-repository -y ppa:deadsnakes/ppa # For Python
+
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get dist-upgrade
@@ -9,7 +18,7 @@ sudo apt-get dist-upgrade
 # REMOVE = sudo apt-get remove {package_name}
 # ==========
 
-sudo apt install synaptic preload bleachbit ulauncher gnome-tweak-tool chrome-gnome-shell chromium-browser -y
+sudo apt install preload bleachbit ulauncher gnome-tweak-tool chrome-gnome-shell chromium-browser -y
 
 sudo snap install spotify discord whatsdesk hey-mail postman beekeeper-studio insomnia
 ### todo: update to stable when launched

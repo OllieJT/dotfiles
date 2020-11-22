@@ -9,6 +9,9 @@ fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
 
+# append to the history file, don't overwrite it
+shopt -s histappend
+
 
 
 # Path to your oh-my-zsh installation.
@@ -114,3 +117,5 @@ export NVM_DIR="$HOME/.nvm"
 # set PATH so it includes user's private bin if it exists
 # if [ -d "$HOME/bin" ] ; then PATH="$HOME/bin:$PATH" fi
 # if [ -d "$HOME/.local/bin" ] ; then PATH="$HOME/.local/bin:$PATH" fi
+
+source "$HOME/.homesick/repos/homeshick/homeshick.sh"

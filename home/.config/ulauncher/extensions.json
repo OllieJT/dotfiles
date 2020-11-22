@@ -2,50 +2,57 @@
     "com.github.ulauncher.ulauncher-emoji": {
         "id": "com.github.ulauncher.ulauncher-emoji",
         "url": "https://github.com/Ulauncher/ulauncher-emoji",
-        "updated_at": "2020-11-18T05:57:54.882622",
+        "updated_at": "2020-11-20T20:46:22.284713",
         "last_commit": "d56b2c8106ab5fbc87b55f608a3bd75db23f2904",
         "last_commit_time": "2020-10-03T19:10:03"
     },
     "com.github.brpaz.ulauncher-currency": {
         "id": "com.github.brpaz.ulauncher-currency",
         "url": "https://github.com/brpaz/ulauncher-currency",
-        "updated_at": "2020-11-18T05:57:56.261249",
+        "updated_at": "2020-11-20T20:46:24.571261",
         "last_commit": "1a023875599d333f551e89cc4ec8670ca0460275",
         "last_commit_time": "2020-11-14T16:55:33"
     },
     "com.github.brpaz.ulauncher-github": {
         "id": "com.github.brpaz.ulauncher-github",
         "url": "https://github.com/brpaz/ulauncher-github",
-        "updated_at": "2020-11-18T05:57:57.817113",
+        "updated_at": "2020-11-20T20:46:27.243915",
         "last_commit": "cf75ed7bc1071eb5c12376b66a25ba6c47fcffad",
         "last_commit_time": "2020-05-31T16:20:09"
     },
     "com.github.brpaz.ulauncher-vscode-projects": {
         "id": "com.github.brpaz.ulauncher-vscode-projects",
         "url": "https://github.com/brpaz/ulauncher-vscode-projects",
-        "updated_at": "2020-11-18T05:57:59.261769",
+        "updated_at": "2020-11-20T20:46:30.318505",
         "last_commit": "0440018ae304810926154126fe09574bd20fd958",
         "last_commit_time": "2020-11-15T15:27:31"
     },
     "com.github.iboyperson.ulauncher-system": {
         "id": "com.github.iboyperson.ulauncher-system",
         "url": "https://github.com/iboyperson/ulauncher-system",
-        "updated_at": "2020-11-18T05:58:00.290395",
+        "updated_at": "2020-11-20T20:46:31.761303",
         "last_commit": "3b2639fd106ed3ef664953eb868b80c2fb8428ea",
         "last_commit_time": "2020-09-22T18:29:15"
     },
     "com.github.brpaz.ulauncher-docker": {
         "id": "com.github.brpaz.ulauncher-docker",
         "url": "https://github.com/brpaz/ulauncher-docker",
-        "updated_at": "2020-11-18T05:58:01.722034",
+        "updated_at": "2020-11-20T20:46:34.056737",
         "last_commit": "6213bfe156084aa4c049de24fb69acd7f1fba8f2",
         "last_commit_time": "2019-12-03T20:15:17"
     },
     "com.github.pywkm.ulauncher-spotify": {
         "id": "com.github.pywkm.ulauncher-spotify",
         "url": "https://github.com/pywkm/ulauncher-spotify",
-        "updated_at": "2020-11-18T05:58:02.928487",
+        "updated_at": "2020-11-20T20:46:36.013291",
         "last_commit": "89d9b02316aaccea0d70b458bb97b3976287f03e",
         "last_commit_time": "2020-02-17T16:20:21"
+    },
+    "com.github.frdrk.ulauncher-dead-simple-convert": {
+        "id": "com.github.frdrk.ulauncher-dead-simple-convert",
+        "url": "https://github.com/frdrk/ulauncher-dead-simple-convert",
+        "updated_at": "2020-11-21T01:59:43.112575",
+        "last_commit": "769035d4896780a4ab6780696af79be2090371c7",
+        "last_commit_time": "2020-10-28T12:21:31"
     }
 }

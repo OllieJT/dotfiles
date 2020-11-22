@@ -8,6 +8,9 @@ Managed with a [homeshick](https://github.com/andsens/homeshick/wiki)) castle
 # Install apps
 sudo $HOME/.scripts/install-apt.sh
 
+# Or directly
+sudo https://raw.githubusercontent.com/OllieJT/dotfiles/master/home/.scripts/install-with-apt.sh | bash
+
 # Confirm dotfiles connection
 homeshick dotfiles link
 ```
@@ -18,6 +21,7 @@ homeshick dotfiles link
 ```sh
 # Install apps
 sudo $HOME/.scripts/install-dnf.sh
+sudo https://raw.githubusercontent.com/OllieJT/dotfiles/master/home/.scripts/install-with-dnf.sh | bash
 
 # Confirm dotfiles connection
 homeshick dotfiles link

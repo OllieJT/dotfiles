@@ -28,7 +28,11 @@ echo "deb https://dl.bintray.com/beekeeper-studio/releases disco main" | sudo te
 
 # ALBERT
 # Adds Albert Key
+echo 'deb http://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_20.10/ /' | sudo tee /etc/apt/sources.list.d/home:manuelschneid3r.list
 # Adds Albert Repo
+curl -fsSL https://download.opensuse.org/repositories/home:manuelschneid3r/xUbuntu_20.10/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_manuelschneid3r.gpg > /dev/null
+
+
 
 sudo apt-get update
 sudo apt-get upgrade -y
@@ -51,7 +55,7 @@ echo "
 
 sudo apt-get install software-properties-common ubuntu-restricted-extras flatpak -y
 sudo apt-get install fish git curl beekeeper-studio python-dev python3-pip python3 -y
-sudo apt-get install 1password preload pidgin pidgin-plugin-pack -y
+sudo apt-get install 1password albert preload pidgin pidgin-plugin-pack -y
 
 # REMOVE = sudo apt-get remove {package_name}
 

@@ -53,7 +53,7 @@ echo "
 
 sudo dnf copr enable pschyska/alacritty
 
-sudo dnf install @multimedia 1password albert fish util-linux-user alacritty lpf-spotify-client -y
+sudo dnf install @multimedia 1password albert fish util-linux-user alacritty lpf-spotify-client gnome-tweak-tool geary  -y
 lpf update
 
 sudo yum -y install pidgin

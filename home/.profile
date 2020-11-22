@@ -28,7 +28,7 @@ export PATH
 
 # MISC VARIABLES
 
-SHELL=/bin/zsh
+SHELL=/bin/fish
 EDITOR=code
 BROWSER=firefox
 LANG=en_GB.UTF-8

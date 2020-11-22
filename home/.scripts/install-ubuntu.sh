@@ -3,7 +3,7 @@
 # Enabling all repositories and refreshing the software list
 # ==========
 
-echo "[1/5] Updating repositories..."
+echo "[1/6] Updating repositories..."
 
 # Enables all repositories
 sudo sed 's/# deb/deb/' -i /etc/apt/sources.list
@@ -37,7 +37,7 @@ sudo apt-get dist-upgrade
 
 # ==========
 # INSTALLING APT PACKAGES
-echo "[2/5] Installing apt packages..."
+echo "[2/6] Installing apt packages..."
 # ----------
 # DISABLED
 # ☑ python-dev
@@ -56,7 +56,7 @@ sudo apt-get install 1password preload pidgin pidgin-plugin-pack -y
 
 # ==========
 # INSTALLING FLATPACK PACKAGES
-echo "[3/5] Installing flatpack packages..."
+echo "[3/6] Installing flatpack packages..."
 # ==========
 
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
@@ -67,7 +67,7 @@ sudo flatpak flatpack com.spotify.Client com.dropbox.Client com.discordapp.Disco
 
 # ==========
 # Setting the Default Shell
-echo "[4/5] Changing the default shell to fish..."
+echo "[4/6] Changing the default shell to fish..."
 # ==========
 
 chsh -s $SHELL
@@ -80,7 +80,7 @@ omf install bass
 
 # ==========
 # INSTALLING DEV PACKAGES
-echo "[5/5] Installing dev tooling..."
+echo "[5/6] Installing dev tooling..."
 # ==========
 
 # NVM
@@ -88,8 +88,8 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
 # ALACRITTY
 
-mkdir ~/.local/apps
-cd ~/.local/apps
+mkdir $HOME/.local/apps
+cd $HOME/.local/apps
 
 # ALACRITTY -> Installs Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -112,6 +112,28 @@ sudo cp target/release/alacritty /usr/local/bin # or anywhere else in $PATH
 sudo cp extra/logo/alacritty-term.svg /usr/share/pixmaps/Alacritty.svg
 sudo desktop-file-install extra/linux/Alacritty.desktop
 sudo update-desktop-database
+
+
+
+
+# ==========
+# INSTALLING HOMESHICK
+echo "[6/6] Installing Homeshick Castle"
+# ==========
+
+# HOMESHICK -> Install
+cd $HOME
+git clone https://github.com/andsens/homeshick.git $HOME/.homesick/repos/homeshick
+
+# HOMESHICK -> Clone Castle
+$HOME/.homesick/repos/homeshick/bin/homeshick clone olliejt/dotfiles
+printf '\nsource "$HOME/.homesick/repos/homeshick/homeshick.sh"' >> $HOME/.bashrc
+
+homeshick dotfiles link
+
+# HOMESHICK -> Symlink
+
+
 
 
 

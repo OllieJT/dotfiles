@@ -1,38 +1,30 @@
 [Added Associations]
-text/plain=code_code.desktop;
-x-scheme-handler/sms=org.gnome.Shell.Extensions.GSConnect.desktop;
-x-scheme-handler/tel=org.gnome.Shell.Extensions.GSConnect.desktop;
-x-scheme-handler/http=firefox.desktop;
-x-scheme-handler/https=firefox.desktop;
-x-scheme-handler/ftp=firefox.desktop;
-x-scheme-handler/chrome=firefox.desktop;
-text/html=firefox.desktop;
-application/x-extension-htm=firefox.desktop;
-application/x-extension-html=firefox.desktop;
-application/x-extension-shtml=firefox.desktop;
-application/x-extension-xhtml=firefox.desktop;
-application/x-extension-xht=firefox.desktop;
-inode/directory=code_code.desktop;
-x-scheme-handler/mailto=hey-mail_hey-mail.desktop;
-x-scheme-handler/snap=snap-store_ubuntu-software.desktop;
-x-scheme-handler/sms=org.gnome.Shell.Extensions.ZorinConnect.desktop;
-x-scheme-handler/tel=org.gnome.Shell.Extensions.ZorinConnect.desktop;
+inode/directory=						code_code.desktop;
+text/html=								code_code.desktop;firefox.desktop;
+text/plain=								code_code.desktop;
+text=								code_code.desktop;
+x-scheme-handler/http=					firefox.desktop;
+x-scheme-handler/https=					firefox.desktop;
+x-scheme-handler/mailto=				hey-mail_hey-mail.desktop;
+x-scheme-handler/snap=					snap-store_ubuntu-software.desktop;
+x-scheme-handler/sms=					org.gnome.Shell.Extensions.ZorinConnect.desktop;	org.gnome.Shell.Extensions.GSConnect.desktop;
+x-scheme-handler/tel=					org.gnome.Shell.Extensions.ZorinConnect.desktop;	org.gnome.Shell.Extensions.GSConnect.desktop;
 
 [Default Applications]
-text/html=chromium-browser.desktop
-x-scheme-handler/http=chromium-browser.desktop
-x-scheme-handler/https=chromium-browser.desktop
-x-scheme-handler/about=chromium-browser.desktop
-x-scheme-handler/unknown=chromium-browser.desktop
-text/plain=code.desktop
-x-scheme-handler/ftp=firefox.desktop
-x-scheme-handler/chrome=firefox.desktop
-application/x-extension-htm=firefox.desktop
-application/x-extension-html=firefox.desktop
-application/x-extension-shtml=firefox.desktop
-application/xhtml+xml=firefox.desktop
-application/x-extension-xhtml=firefox.desktop
-application/x-extension-xht=firefox.desktop
-x-scheme-handler/mailto=hey-mail_hey-mail.desktop
+application/x-extension-htm=			firefox.desktop
+application/x-extension-html=			firefox.desktop
+application/x-extension-shtml=			firefox.desktop
+application/x-extension-xht=			firefox.desktop
+application/x-extension-xhtml=			firefox.desktop
+application/xhtml+xml=					firefox.desktop
+text/html=								code.desktop
+text/plain=								code.desktop
+x-scheme-handler/about=					firefox.desktop
+x-scheme-handler/chrome=				firefox.desktop
+x-scheme-handler/ftp=					firefox.desktop
+x-scheme-handler/http=					firefox.desktop
+x-scheme-handler/https=					firefox.desktop
+x-scheme-handler/mailto=				hey-mail_hey-mail.desktop
+x-scheme-handler/unknown=				firefox.desktop
 
 [Removed Associations]

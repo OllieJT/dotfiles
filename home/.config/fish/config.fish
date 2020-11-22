@@ -16,11 +16,6 @@ function gitui
 end
 
 
-set --export NVM_DIR $HOME/.nvm
-function nvm
-    bass source ~/.nvm/nvm.sh --no-use ';' nvm $argv
-end
-
 # set --export PATH $PATH:$HOME/.bin:$HOME/.bin/ascii:$GOPATH/bin
 set --export PATH /usr/local/bin /usr/sbin /usr/.nvm/versions/node/v14.15.1/bin $PATH
 

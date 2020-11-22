@@ -11,7 +11,7 @@
 
 # SET PATH
 
-PATH=$PATH:$HOME/.bin:$HOME/.bin/ascii:$GOPATH/bin
+PATH=$HOME/.cargo/bin:$PATH:$HOME/.bin:$HOME/.bin/ascii:$GOPATH/bin
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then

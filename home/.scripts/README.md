@@ -11,10 +11,12 @@ Each of these scripts should have the same result. They are each made for distro
 ☑ [1Password](https://support.1password.com/getting-started-linux/#get-1password)
 ☑ [beekeeper-studio](https://docs.beekeeperstudio.io/installation/#mac-installation)
 ☑ [albert](https://albertlauncher.github.io/installing/)
-☑ [synaptic](https://www.nongnu.org/synaptic/)
+☑ [alacritty](https://github.com/alacritty/alacritty/blob/master/INSTALL.md)
 ☑ curl
 ☑ git
 ☑ prelopad
+☑ python3
+☑ python3-pip
 
 ## Installing these flatpacks
 ☑ [com.spotify.Client](https://flathub.org/apps/details/com.spotify.Client)

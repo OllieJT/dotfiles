@@ -46,7 +46,7 @@ echo "[2/5] Installing apt packages..."
 # ==========
 
 sudo apt-get install software-properties-common ubuntu-restricted-extras flatpak -y
-sudo apt-get install fish git curl beekeeper-studio -y
+sudo apt-get install fish git curl beekeeper-studio python-dev python3-pip python3 -y
 sudo apt-get install 1password preload pidgin pidgin-plugin-pack -y
 
 # REMOVE = sudo apt-get remove {package_name}
@@ -80,11 +80,38 @@ omf install bass
 
 # ==========
 # INSTALLING DEV PACKAGES
-echo "[5/5] Downloading NVM..."
+echo "[5/5] Installing dev tooling..."
 # ==========
 
+# NVM
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
+# ALACRITTY
+
+mkdir ~/.local/apps
+cd ~/.local/apps
+
+# ALACRITTY -> Installs Rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source $HOME/.cargo/env
+rustup override set stable
+rustup update stable
+
+# ALACRITTY -> Install Dependencies
+sudo apt-get install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev -y
+
+git clone https://github.com/alacritty/alacritty.git
+cd alacritty
+
+# ALACRITTY -> Build App
+cargo build --release
+sudo tic -xe alacritty,alacritty-direct extra/alacritty.info
+
+# ALACRITTY -> Make Icon
+sudo cp target/release/alacritty /usr/local/bin # or anywhere else in $PATH
+sudo cp extra/logo/alacritty-term.svg /usr/share/pixmaps/Alacritty.svg
+sudo desktop-file-install extra/linux/Alacritty.desktop
+sudo update-desktop-database
 
 
 

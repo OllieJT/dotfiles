@@ -3,13 +3,15 @@
 # Enabling all repositories and refreshing the software list
 # ==========
 
-echo "[1/6] Updating repositories..."
+echo "
+☑	-> [1/6] Updating repositories...
+"
 
 # Enables all repositories
-sudo sed 's/# deb/deb/' -i /etc/apt/sources.list
+# sudo sed 's/# deb/deb/' -i /etc/apt/sources.list
 
 sudo add-apt-repository -y universe # Ubuntu
-sudo add-apt-repository -y ppa:deadsnakes/ppa # Python
+sudo add-apt-repository -y ppa:deadsnakes/ppa focal # Python
 sudo add-apt-repository -y ppa:fish-shell/release-3 # Fish
 
 # 1PASSWORD
@@ -37,7 +39,9 @@ sudo apt-get dist-upgrade
 
 # ==========
 # INSTALLING APT PACKAGES
-echo "[2/6] Installing apt packages..."
+echo "
+☑	-> [2/6] Installing apt packages...
+"
 # ----------
 # DISABLED
 # ☑ python-dev
@@ -56,31 +60,22 @@ sudo apt-get install 1password preload pidgin pidgin-plugin-pack -y
 
 # ==========
 # INSTALLING FLATPACK PACKAGES
-echo "[3/6] Installing flatpack packages..."
+echo "
+☑	-> [3/6] Installing flatpack packages...
+"
 # ==========
 
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-sudo flatpak flatpack com.spotify.Client com.dropbox.Client com.discordapp.Discord  com.getpostman.Postman org.gnome.gitg com.visualstudio.code -y
-
-
-
-
-# ==========
-# Setting the Default Shell
-echo "[4/6] Changing the default shell to fish..."
-# ==========
-
-chsh -s $SHELL
-curl -L https://get.oh-my.fish | fish
-fish
-omf install bass
+sudo flatpak install com.spotify.Client com.dropbox.Client com.discordapp.Discord  com.getpostman.Postman org.gnome.gitg com.visualstudio.code -y
 
 
 
 
 # ==========
 # INSTALLING DEV PACKAGES
-echo "[5/6] Installing dev tooling..."
+echo "
+☑	-> [4/6] Installing dev tooling...
+"
 # ==========
 
 # NVM
@@ -118,7 +113,9 @@ sudo update-desktop-database
 
 # ==========
 # INSTALLING HOMESHICK
-echo "[6/6] Installing Homeshick Castle"
+echo "
+☑	-> [5/6] Installing Homeshick Castle
+"
 # ==========
 
 # HOMESHICK -> Install
@@ -129,9 +126,23 @@ git clone https://github.com/andsens/homeshick.git $HOME/.homesick/repos/homeshi
 $HOME/.homesick/repos/homeshick/bin/homeshick clone olliejt/dotfiles
 printf '\nsource "$HOME/.homesick/repos/homeshick/homeshick.sh"' >> $HOME/.bashrc
 
+# HOMESHICK -> Symlink
 homeshick dotfiles link
 
-# HOMESHICK -> Symlink
+
+
+
+# ==========
+# Setting the Default Shell
+echo "
+☑	-> [6/6] Changing the default shell to fish...
+"
+# ==========
+
+chsh -s $SHELL
+curl -L https://get.oh-my.fish | fish
+fish
+omf install bass
 
 
 
@@ -140,4 +151,6 @@ homeshick dotfiles link
 # ==========
 # DONE
 # ==========
-echo "Done!"
+echo "
+Done!
+"

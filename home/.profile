@@ -47,3 +47,5 @@ export NODE_VERSION NVM_DIR
 
  # LOAD NVM
 source ~/.nvm/nvm.sh
+
+export PATH="$HOME/.cargo/bin:$PATH"

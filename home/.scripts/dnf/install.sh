@@ -30,9 +30,7 @@ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub
 
 
 sudo yum -y update
-sudo dnf check-update
-sudo dnf upgrade -y
-sudo dnf system-upgrade
+sudo dnf check-update && sudo dnf upgrade -y && sudo dnf upgrade
 
 
 
@@ -51,10 +49,8 @@ echo "
 # ☑ beekeeper-studio (Requires snap)
 # ==========
 
-sudo dnf copr enable pschyska/alacritty
+sudo dnf install @multimedia 1password albert util-linux-user lpf-spotify-client gnome-tweak-tool geary  -y
 
-sudo dnf install @multimedia 1password albert fish util-linux-user alacritty lpf-spotify-client gnome-tweak-tool geary  -y
-lpf update
 
 sudo yum -y install pidgin
 
@@ -67,56 +63,7 @@ echo "
 # ==========
 
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-sudo flatpak install com.dropbox.Client com.discordapp.Discord  com.getpostman.Postman org.gnome.gitg com.visualstudio.code -y
-
-
-
-
-# ==========
-# INSTALLING DEV PACKAGES
-echo "
-☑	-> [4/6] Installing dev tooling...
-"
-# ==========
-
-# NVM
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-lpf update
-
-# OH-MY-FISH
-curl -L https://get.oh-my.fish | fish
-omf install bass
-
-
-# ==========
-# INSTALLING HOMESHICK
-echo "
-☑	-> [5/6] Installing Homeshick Castle
-"
-# ==========
-
-# HOMESHICK -> Install
-cd $HOME
-git clone https://github.com/andsens/homeshick.git $HOME/.homesick/repos/homeshick
-
-# HOMESHICK -> Clone Castle
-$HOME/.homesick/repos/homeshick/bin/homeshick clone olliejt/dotfiles
-printf '\nsource "$HOME/.homesick/repos/homeshick/homeshick.sh"' >> $HOME/.bashrc
-
-# HOMESHICK -> Symlink
-homeshick dotfiles link
-
-
-
-
-# ==========
-# Setting the Default Shell
-echo "
-☑	-> [6/6] Changing the default shell to fish...
-"
-# ==========
-
-chsh -s $SHELL
+sudo flatpak install com.discordapp.Discord  com.getpostman.Postman org.gnome.gitg com.visualstudio.code -y
 
 
 
@@ -128,3 +75,4 @@ chsh -s $SHELL
 echo "
 Done!
 "
+lpf update

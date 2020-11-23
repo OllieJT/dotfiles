@@ -1,14 +1,14 @@
 [Added Associations]
-inode/directory=						code_code.desktop;
+inode/directory=						code_code.desktop;alacritty.desktop;
 text/html=								code_code.desktop;firefox.desktop;
 text/plain=								code_code.desktop;
-text=								code_code.desktop;
+text=									code_code.desktop;
 x-scheme-handler/http=					firefox.desktop;
 x-scheme-handler/https=					firefox.desktop;
 x-scheme-handler/mailto=				hey-mail_hey-mail.desktop;
 x-scheme-handler/snap=					snap-store_ubuntu-software.desktop;
-x-scheme-handler/sms=					org.gnome.Shell.Extensions.ZorinConnect.desktop;	org.gnome.Shell.Extensions.GSConnect.desktop;
-x-scheme-handler/tel=					org.gnome.Shell.Extensions.ZorinConnect.desktop;	org.gnome.Shell.Extensions.GSConnect.desktop;
+x-scheme-handler/sms=					org.gnome.Shell.Extensions.ZorinConnect.desktop;org.gnome.Shell.Extensions.GSConnect.desktop;
+x-scheme-handler/tel=					org.gnome.Shell.Extensions.ZorinConnect.desktop;org.gnome.Shell.Extensions.GSConnect.desktop;
 
 [Default Applications]
 application/x-extension-htm=			firefox.desktop

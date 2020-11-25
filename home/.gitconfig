@@ -2,7 +2,7 @@
 	email = olliejt@hey.com
 	name = Ollie
 [hub]
-	protocol = https
+	protocol = ssh
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f

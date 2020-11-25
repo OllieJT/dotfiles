@@ -99,16 +99,16 @@
   #multiplier: 3
 
 # Font configuration
-#font:
+font:
   # Normal (roman) font face
-  #normal:
+  normal:
     # Font family
     #
     # Default:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    #family: monospace
+    family: Fira Code
 
     # The `style` can be specified to pick a specific face.
     #style: Regular
@@ -646,7 +646,7 @@
 #
 # If the same trigger is assigned to multiple actions, all of them are executed
 # in the order they were defined in.
-#key_bindings:
+key_bindings:
   #- { key: Paste,                                action: Paste          }
   #- { key: Copy,                                 action: Copy           }
   #- { key: L,         mods: Control,             action: ClearLogNotice }
@@ -671,8 +671,7 @@
   #- { key: F,      mods: Control,       mode: Vi, action: ScrollPageDown          }
   #- { key: U,      mods: Control,       mode: Vi, action: ScrollHalfPageUp        }
   #- { key: D,      mods: Control,       mode: Vi, action: ScrollHalfPageDown      }
-  #- { key: Y,                           mode: Vi, action: Copy                    }
-  #- { key: Y,                           mode: Vi, action: ClearSelection          }
+  #- { key: Y,                           mode: Vi, action: Copy  key: C,      mods: Control,       mode: Vi, action: ToggleViMode Selection          }
   #- { key: Copy,                        mode: Vi, action: ClearSelection          }
   #- { key: V,                           mode: Vi, action: ToggleNormalSelection   }
   #- { key: V,      mods: Shift,         mode: Vi, action: ToggleLineSelection     }
@@ -706,8 +705,10 @@
   #- { key: N,      mods: Shift,         mode: Vi, action: SearchPrevious          }
 
   # (Windows, Linux, and BSD only)
-  #- { key: V,              mods: Control|Shift,           action: Paste            }
-  #- { key: C,              mods: Control|Shift,           action: Copy             }
+  - { key: V,              mods: Control,                 action: Paste            }
+  - { key: C,              mods: Control,                 action: Copy             }
+  - { key: K,              mods: Control,                 mode: ~Vi, chars: "\x0c" }
+  #- { key: K,              mods: Control,                 action: ClearLogNotice   }
   #- { key: F,              mods: Control|Shift,           action: SearchForward    }
   #- { key: B,              mods: Control|Shift,           action: SearchBackward   }
   #- { key: C,              mods: Control|Shift, mode: Vi, action: ClearSelection   }
@@ -723,7 +724,7 @@
   #- { key: Return,   mods: Alt,           action: ToggleFullscreen }
 
   # (macOS only)
-  #- { key: K,              mods: Command, mode: ~Vi, chars: "\x0c"            }
+  #- { key: K,              mods: Command,            mode: ~Vi, chars: "\x0c" }
   #- { key: Key0,           mods: Command,            action: ResetFontSize    }
   #- { key: Equals,         mods: Command,            action: IncreaseFontSize }
   #- { key: Plus,           mods: Command,            action: IncreaseFontSize }

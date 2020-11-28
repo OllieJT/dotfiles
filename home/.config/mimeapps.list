@@ -29,3 +29,4 @@ x-scheme-handler/unknown=				chromium.desktop
 x-scheme-handler/snap=					snap-store_ubuntu-software.desktop;
 
 [Removed Associations]
+ is:open

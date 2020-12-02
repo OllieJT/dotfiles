@@ -11,6 +11,7 @@
 
 # SET PATH
 
+
 PATH=$HOME/.cargo/bin:$PATH:$HOME/.bin:$HOME/.bin/ascii:$GOPATH/bin
 
 # set PATH so it includes user's private bin if it exists
@@ -28,6 +29,9 @@ export PATH
 
 # MISC VARIABLES
 
+export QT_QPA_PLATFORMTHEME="qt5ct"
+export QT_AUTO_SCREEN_SCALE_FACTOR=0
+export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 SHELL=/bin/fish
 EDITOR=code
 BROWSER=firefox
@@ -46,6 +50,4 @@ export NODE_VERSION NVM_DIR
 
 
  # LOAD NVM
-source ~/.nvm/nvm.sh
-
-export PATH="$HOME/.cargo/bin:$PATH"
+# source ~/.nvm/nvm.sh

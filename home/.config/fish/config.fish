@@ -2,7 +2,9 @@
 # Homeshick autocompletion
 source "$HOME/.homesick/repos/homeshick/completions/homeshick.fish"
 
-
+function fish_greeting
+    neofetch
+end
 
 function config
 	/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME

@@ -2,7 +2,6 @@
 # Homeshick autocompletion
 source "$HOME/.homesick/repos/homeshick/completions/homeshick.fish"
 
-set fish_greeting
 
 
 function config
